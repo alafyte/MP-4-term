@@ -18,10 +18,22 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Auxil.h" />
+    <ClInclude Include="Boat.h" />
+    <ClInclude Include="Combi.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Auxil.cpp" />
+    <ClCompile Include="Boat.cpp" />
+    <ClCompile Include="Combi.cpp" />
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{29ef87f7-4134-4688-8258-05f61e7cba18}</ProjectGuid>
+    <ProjectGuid>{e3feefff-f81e-4325-8e7e-a763b0ebcec6}</ProjectGuid>
     <RootNamespace>task06</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -138,18 +150,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Auxil.cpp" />
-    <ClCompile Include="Boat.cpp" />
-    <ClCompile Include="Combi.cpp" />
-    <ClCompile Include="Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Auxil.h" />
-    <ClInclude Include="Boat.h" />
-    <ClInclude Include="Combi.h" />
-    <ClInclude Include="stdafx.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
