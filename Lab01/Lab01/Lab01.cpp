@@ -8,7 +8,6 @@
 
 int Fib(int i)
 {
-	int value = 0;
 	if (i < 1) 
 		return 0;
 	if (i == 1) 
