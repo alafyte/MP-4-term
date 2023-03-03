@@ -5,11 +5,12 @@
 #include "Auxil.h"
 #define NN 25
 #define MM 5
+
 int _tmain(int argc, _TCHAR* argv[])
 {
     setlocale(LC_ALL, "rus");
     int v[NN], V = 1500, c[NN] = { 10, 15, 20, 25, 30, 25, 70, 30, 120, 100, 90, 50, 75,
-                                   150, 140, 20, 10, 130, 30, 10, 70, 120, 125, 30, 100};
+                                   150, 140, 20, 10, 130, 30, 10, 70, 120, 125, 30, 100 };
     
     auxil::start();
     for (int i = 0; i < NN; i++)

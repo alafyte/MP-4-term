@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{7d695a4f-1ab6-496d-8a2b-0f78614fabe5}</ProjectGuid>
-    <RootNamespace>task02</RootNamespace>
+    <ProjectGuid>{862c7a5a-c365-4ec5-a020-4363b4f67d5e}</ProjectGuid>
+    <RootNamespace>task08</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,11 +139,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Combi2.cpp" />
-    <ClCompile Include="Main02.cpp" />
+    <ClCompile Include="Auxil.cpp" />
+    <ClCompile Include="Combi.cpp" />
+    <ClCompile Include="knapsack.cpp" />
+    <ClCompile Include="Main08.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Combi2.h" />
+    <ClInclude Include="Auxil.h" />
+    <ClInclude Include="Combi.h" />
+    <ClInclude Include="Knapsack.h" />
+    <ClInclude Include="stdafx.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

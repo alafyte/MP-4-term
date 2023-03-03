@@ -15,15 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main01.cpp">
+    <ClCompile Include="Auxil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Combi1.cpp">
+    <ClCompile Include="Combi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="knapsack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main08.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Combi1.h">
+    <ClInclude Include="Auxil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Combi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Knapsack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Combi3.cpp" />
-    <ClCompile Include="task03.cpp" />
+    <ClCompile Include="Main03.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Combi3.h" />

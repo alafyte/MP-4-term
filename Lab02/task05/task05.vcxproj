@@ -28,7 +28,7 @@
     <ClCompile Include="Auxil.cpp" />
     <ClCompile Include="Boat.cpp" />
     <ClCompile Include="Combi.cpp" />
-    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Main05.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
