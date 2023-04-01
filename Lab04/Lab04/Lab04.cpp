@@ -10,8 +10,8 @@
 using namespace std;
 
 #define N 6
-#define L1 13
-#define L2 15
+#define FIRST_LEN 140
+#define SECOND_LEN 130
 
 char* Task1(int size)
 {
@@ -69,29 +69,54 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_ALL, "rus");
 	srand(time(0));
-	char* x = Task1(L1);
-	cout << "String s1: " << endl;
-	for (int i = 0; i < 13; i++) cout << x[i];
-	cout << endl << endl;
 
-	char* y = Task1(L2);
-	cout << "String s2: " << endl;
-	for (int i = 0; i < 15; i++) cout << y[i];
-	cout << endl << endl;
-
-	clock_t t1 = 0, t2 = 0, t3, t4;
-	int  lx = L1, ly = L2;
-	std::cout << std::endl;
-	std::cout << std::endl << "-- расстояние Левенштейна -----" << std::endl;
-	std::cout << std::endl << "--длина --- рекурсия -- дин.програм. ---"
-		<< std::endl;
-	for (int i = 6; i < std::min(lx, ly); i++)
+	char* s1 = Task1(FIRST_LEN);
+	cout << "S1: " << endl;
+	for (int i = 0; i < FIRST_LEN; i++) 
 	{
-		t1 = clock(); levenshtein_r(i, x, i - 2, y); t2 = clock();
-		t3 = clock(); levenshtein(i, x, i - 2, y); t4 = clock();
-		std::cout << std::right << std::setw(2) << i - 2 << "/" << std::setw(2) << i
-			<< "        " << std::left << std::setw(10) << (t2 - t1)
-			<< "   " << std::setw(10) << (t4 - t3) << std::endl;
+		if (i % 50 == 0)
+		{
+			cout << "\n";
+		}
+		cout << s1[i];
+	}
+	cout << endl << endl;
+
+	srand(time(NULL) + 1);
+	char* s2 = Task1(SECOND_LEN);
+	cout << "S2: " << endl;
+	for (int i = 0; i < SECOND_LEN; i++) 
+	{
+		if (i % 50 == 0)
+		{
+			cout << "\n";
+		}
+		cout << s2[i];
+	}
+	cout << endl << endl;
+
+	clock_t t1 = 0, t2 = 0, t3 = 0, t4 = 0;
+	int lx = sizeof(s1);
+	int ly = sizeof(s2);
+
+	int s1_size[]{ FIRST_LEN / 25, FIRST_LEN / 20, FIRST_LEN / 15, FIRST_LEN / 10, FIRST_LEN / 5, FIRST_LEN / 2, FIRST_LEN };
+	int s2_size[]{ SECOND_LEN / 25, SECOND_LEN / 20, SECOND_LEN / 15, SECOND_LEN / 10, SECOND_LEN / 5, SECOND_LEN / 2, SECOND_LEN };
+
+	cout << "\n\n-- расстояние Левенштейна -----";
+	cout << "\n\n--длина --- рекурсия -- дин.програм. ---\n";
+
+	for (int i = 0; i < min(lx, ly); i++)
+	{
+		t1 = clock();
+		levenshtein_r(s1_size[i], s1, s2_size[i], s2);
+		t2 = clock();
+
+		t3 = clock();
+		levenshtein(s1_size[i], s1, s2_size[i], s2);
+		t4 = clock();
+		cout << right << setw(2) << s1_size[i] << "/" << setw(2) << s2_size[i]
+			<< "        " << left << setw(10) << (t2 - t1)
+			<< "   " << setw(10) << (t4 - t3) << endl;
 	}
 
 	Task5();
